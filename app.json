@@ -33,10 +33,17 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fb97a3d1-9006-4bba-bc8b-13b0e74cde21"
+      }
     }
   }
 }
