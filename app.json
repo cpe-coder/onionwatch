@@ -43,8 +43,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "fb97a3d1-9006-4bba-bc8b-13b0e74cde21"
+        "projectId": "28ce78f8-40f7-4624-95d7-4dbaafff17f2"
       }
-    }
+    },
+    "owner": "cpecoder"
   }
 }
