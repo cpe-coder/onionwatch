@@ -55,8 +55,7 @@ const Settings = () => {
 				onPress={() => setVisible((prev) => !prev)}
 				className="flex-col items-center justify-center"
 			>
-				<Image source={icon.settings} tintColor={"white"} className="w-8 h-8" />
-				<Text className="text-white">Settings</Text>
+				<Image source={icon.settings} tintColor={"white"} className="w-7 h-7" />
 			</TouchableOpacity>
 			<Modal
 				transparent

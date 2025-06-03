@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import { Settings } from "@/components";
 import { useAuth } from "@/context/auth-context";
 import { Redirect, Stack } from "expo-router";
 import React from "react";
@@ -31,18 +31,7 @@ export default function TabLayout() {
 							backgroundColor: "#ae4550",
 						},
 						headerRight: () => {
-							return <Header.HeaderRight />;
-						},
-						headerTintColor: "white",
-					}}
-				/>
-				<Stack.Screen
-					name="Control"
-					options={{
-						headerShown: false,
-						title: "Control",
-						headerStyle: {
-							backgroundColor: "#ae4550",
+							return <Settings />;
 						},
 						headerTintColor: "white",
 					}}

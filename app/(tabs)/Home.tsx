@@ -1,4 +1,3 @@
-import { Tabs } from "@/components";
 import { images } from "@/constant/images";
 import { useNavigation } from "expo-router";
 import * as ScreenOrientation from "expo-screen-orientation";
@@ -46,7 +45,6 @@ export default function Home() {
 					</View>
 				</View>
 			</View>
-			<Tabs />
 		</View>
 	);
 }
