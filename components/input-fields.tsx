@@ -30,13 +30,13 @@ const InputField: React.FC<FormFieldProps> = ({
 			</Text>
 
 			<View
-				className={`w-full h-16 px-4 bg-black-100 rounded-2xl border  border-gray-100  focus:border-primary flex flex-row items-center ${borderStyle} `}
+				className={`w-full h-16 px-4 bg-black-100 rounded-2xl border  border-slate-500  focus:border-primary flex flex-row items-center ${borderStyle} `}
 			>
 				<TextInput
 					className="flex-1 text-text font-psemibold text-base"
 					value={value}
 					placeholder={placeholder}
-					placeholderTextColor="#7B7B8B"
+					placeholderTextColor="#64748b"
 					onChangeText={handleChangeText}
 					secureTextEntry={title === "Password" && !showPassword}
 					{...props}

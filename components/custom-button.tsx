@@ -26,7 +26,7 @@ const CustomButton: React.FC<CustomButtonProp> = ({
 		<TouchableOpacity
 			onPress={handlePress}
 			activeOpacity={0.7}
-			className={`bg-white rounded-xl min-h-[62px] flex flex-row justify-center items-center ${containerStyles} ${
+			className={`bg-slate-500 rounded-xl min-h-[62px] flex flex-row justify-center items-center ${containerStyles} ${
 				disable ? "opacity-50" : ""
 			}`}
 			disabled={disable}
@@ -38,7 +38,7 @@ const CustomButton: React.FC<CustomButtonProp> = ({
 			{submitting && (
 				<ActivityIndicator
 					animating={submitting}
-					color="#fff"
+					color="#64748b"
 					size="small"
 					className="ml-2"
 				/>

@@ -81,11 +81,11 @@ export default function SignUp() {
 					}}
 				>
 					<View className="items-center -mt-20 justify-center">
-						<Text className="text-5xl text-white font-bold text-center">
-							AQUAFLOW
+						<Text className="text-5xl text-slate-500 font-bold text-center">
+							Onionwatch
 						</Text>
 
-						<Text className="text-2xl text-center text-text mt-10 font-bold">
+						<Text className="text-2xl text-center text-slate-700 mt-10 font-bold">
 							SIGN UP
 						</Text>
 					</View>
@@ -113,7 +113,7 @@ export default function SignUp() {
 					/>
 
 					<Text
-						className={`text-lg text-red-200 font-semibold text-center py-1 px-4 ${
+						className={`text-lg text-red-500 font-semibold text-center py-1 px-4 ${
 							errorMessage ? "block" : "hidden"
 						}`}
 					>
@@ -121,7 +121,7 @@ export default function SignUp() {
 					</Text>
 
 					<Text
-						className={`text-lg text-white font-semibold text-center py-1 ${
+						className={`text-lg text-green-500 font-semibold text-center py-1 ${
 							successMessage ? "block" : "hidden"
 						}`}
 					>
@@ -137,11 +137,13 @@ export default function SignUp() {
 					/>
 
 					<View className="flex justify-center pt-5 flex-row gap-2">
-						<Text className="text-lg text-secondText font-pregular">
+						<Text className="text-lg text-slate-500 font-pregular">
 							Have an account?
 						</Text>
 						<TouchableOpacity onPress={handleRoute}>
-							<Text className="text-lg font-psemibold text-white">Sign In</Text>
+							<Text className="text-lg font-psemibold text-slate-700">
+								Sign In
+							</Text>
 						</TouchableOpacity>
 					</View>
 				</View>
