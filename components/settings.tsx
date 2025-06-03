@@ -63,17 +63,17 @@ const Settings = () => {
 				onRequestClose={() => setVisible(false)}
 				animationType="fade"
 			>
-				<View className=" bg-background w-screen h-screen">
+				<View className=" bg-white w-screen h-screen">
 					<View className="flex p-4 flex-row gap-2 items-center justify-start">
 						<Pressable onPress={() => setVisible(false)} className=" mr-5">
-							<Ionicons name="arrow-back" size={24} color="white" />
+							<Ionicons name="arrow-back" size={24} color="#334155" />
 						</Pressable>
 						<Text className="text-text font-bold text-xl">Settings</Text>
 					</View>
 					<View className="flex w-full justify-center items-center pt-5">
 						<Image
 							source={!userImage ? icon.user : { uri: userImage.image }}
-							className="w-28 h-28 border border-white rounded-full"
+							className="w-28 h-28 border border-slate-700 rounded-full"
 						/>
 
 						<Text className="text-text py-5 font-bold text-2xl">
@@ -83,21 +83,29 @@ const Settings = () => {
 					<View className="py-2">
 						<Pressable className="flex-row px-4 py-2 justify-start items-center gap-5 active:bg-gray-300/20 transition-all duration-300 active:transition-all active:duration-300">
 							<View className="bg-secondText rounded-full p-3">
-								<MaterialIcons name="alternate-email" size={24} color="white" />
+								<MaterialIcons
+									name="alternate-email"
+									size={24}
+									color="#334155"
+								/>
 							</View>
 							<View>
-								<Text className=" text-lg text-text">Email Account</Text>
-								<Text className="text-gray-300 text-xs">{userData?.email}</Text>
+								<Text className=" text-lg text-slate-700">Email Account</Text>
+								<Text className="text-slate-500 text-xs">
+									{userData?.email}
+								</Text>
 							</View>
 						</Pressable>
 						<Pressable
 							onPress={() => chooseFromLibrary()}
 							className="flex-row px-4 py-2 justify-start items-center gap-5 active:bg-gray-300/20 transition-all duration-300 active:transition-all active:duration-300"
 						>
-							<View className="bg-secondText rounded-full p-3">
-								<Entypo name="camera" size={24} color="white" />
+							<View className="bg-slate-200 rounded-full p-3">
+								<Entypo name="camera" size={24} color="#334155" />
 							</View>
-							<Text className=" text-lg text-text">Change Profile Image</Text>
+							<Text className=" text-lg text-slate-700">
+								Change Profile Image
+							</Text>
 						</Pressable>
 					</View>
 				</View>
