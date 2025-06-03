@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import { useAuth } from "@/context/auth-context";
 import { Redirect, Stack } from "expo-router";
 import React from "react";
@@ -28,6 +29,9 @@ export default function TabLayout() {
 						title: "Home",
 						headerStyle: {
 							backgroundColor: "#ae4550",
+						},
+						headerRight: () => {
+							return <Header.HeaderRight />;
 						},
 						headerTintColor: "white",
 					}}
