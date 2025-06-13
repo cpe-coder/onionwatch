@@ -13,7 +13,6 @@ interface AuthProps {
 
 const TOKEN_KEY = "TOKEN";
 export const API_URL = "https://onionwatch-server.vercel.app";
-// export const API_URL = "http://localhost:3000";
 const AuthContext = createContext<AuthProps>({});
 
 export const useAuth = () => {
