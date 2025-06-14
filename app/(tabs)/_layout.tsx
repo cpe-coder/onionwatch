@@ -28,7 +28,7 @@ export default function TabLayout() {
 					options={{
 						title: "Home",
 						headerStyle: {
-							backgroundColor: "#ae4550",
+							backgroundColor: "#64748b",
 						},
 						headerRight: () => {
 							return <Settings />;

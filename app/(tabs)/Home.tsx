@@ -22,13 +22,43 @@ export default function Home() {
 
 	return (
 		<View className="bg-background h-full w-full px-8 bg-slate-200">
-			<View className="flex flex-col justify-center">
-				<Text>Onionwatch</Text>
-				<Image
-					source={images.Logo}
-					resizeMode="contain"
-					className="w-36 h-36"
-				/>
+			<View className="flex flex-col items-center w-full py-8">
+				<Text className="text-3xl font-bold text-slate-500">
+					Welcome to Onionwatch
+				</Text>
+			</View>
+			<View className="flex-1 gap-2">
+				<Text className="text-slate-700 font-bold text-xl">Results</Text>
+				<View className="flex flex-row justify-between items-center rounded-md border border-slate-500 p-2">
+					<View>
+						<View className="flex flex-row items-center gap-1">
+							<Text className="text-slate-700 font-bold text-xl">Insect: </Text>
+							<Text className="text-slate-500 font-medium text-lg">Bangag</Text>
+						</View>
+						<View className="flex flex-row items-center gap-1">
+							<Text className="text-slate-700 font-bold text-xl">Date: </Text>
+							<Text className="text-slate-500 font-medium text-lg">
+								April 3, 2025, 5:00 AM
+							</Text>
+						</View>
+					</View>
+					<Image source={images.Bangag} className="w-14 h-14 rounded-md" />
+				</View>
+				<View className="flex flex-row justify-between items-center rounded-md border border-slate-500 p-2">
+					<View>
+						<View className="flex flex-row items-center gap-1">
+							<Text className="text-slate-700 font-bold text-xl">Insect: </Text>
+							<Text className="text-slate-500 font-medium text-lg">Bangag</Text>
+						</View>
+						<View className="flex flex-row items-center gap-1">
+							<Text className="text-slate-700 font-bold text-xl">Date: </Text>
+							<Text className="text-slate-500 font-medium text-lg">
+								April 3, 2025, 5:00 AM
+							</Text>
+						</View>
+					</View>
+					<Image source={images.Bangag} className="w-14 h-14 rounded-md" />
+				</View>
 			</View>
 		</View>
 	);
